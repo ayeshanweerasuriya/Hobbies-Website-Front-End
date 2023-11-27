@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/feed_back/feed_back.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <title>Digital Delights</title>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <header>
+      <div class="navbar">
+        <a class="logo" href="/Home_Page/Home_Page.html"
+          ><img src="/Images/Logo.png" alt="logo" class="logo"
+        /></a>
+        <ul class="links">
+          <li><a href="/About/About.html">About</a></li>
+          <li><a href="/Movies/Movies.html">Movies</a></li>
+          <li><a href="/Games/Games.html">Games</a></li>
+          <li><a href="/TV_Series/TV_Series.html">TV Series</a></li>
+        </ul>
+        <a class="action_btn" href="/feed_back/feed_back.html">FeedBack</a>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="dropdown_menu">
+        <li><a href="/About/About.html">About</a></li>
+        <li><a href="/Movies/Movies.html">Movies</a></li>
+        <li><a href="/Games/Games.html">Games</a></li>
+        <li><a href="/TV_Series/TV_Series.html">TV Series</a></li>
+        <li>
+          <a class="action_btn" href="/feed_back/feed_back.html">FeedBack</a>
+        </li>
+      </div>
+    </header>
+
+    <!-- Contact form -->
+
+    <div class="contact_form">
+      <div class="contact1">
+        <div class="container-contact1">
+          <div class="contact1-pic js-tilt" data-tilt>
+            <img src="/Images/FeedBack/Logo-Contact.png" alt="Logo-Contact" />
+          </div>
+
+          <form class="contact1-form validate-form">
+            <span class="contact1-form-title"> Get in touch </span>
+
+            <div
+              class="wrap-input1 validate-input"
+              data-validate="Name is required"
+            >
+              <input
+                class="input1"
+                type="text"
+                name="name"
+                placeholder="Name"
+              />
+              <span class="shadow-input1"></span>
+            </div>
+
+            <div
+              class="wrap-input1 validate-input"
+              data-validate="Valid email is required: ex@abc.xyz"
+            >
+              <input
+                class="input1"
+                type="text"
+                name="email"
+                placeholder="Email"
+              />
+              <span class="shadow-input1"></span>
+            </div>
+
+            <div
+              class="wrap-input1 validate-input"
+              data-validate="Subject is required"
+            >
+              <input
+                class="input1"
+                type="text"
+                name="subject"
+                placeholder="Subject"
+              />
+              <span class="shadow-input1"></span>
+            </div>
+
+            <div
+              class="wrap-input1 validate-input"
+              data-validate="Message is required"
+            >
+              <textarea
+                class="input1"
+                name="message"
+                placeholder="Message"
+              ></textarea>
+              <span class="shadow-input1"></span>
+            </div>
+
+            <div class="container-contact1-form-btn">
+              <button class="contact1-form-btn">Send Email</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vuejs Comment Box -->
+    <div class="box">
+      <div id="app">
+        <div class="comment-section-wrapper">
+          <comment-section :comments="comments"></comment-section>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Me Section Start -->
+    <section class="about">
+      <button class="collapsible">
+        Discover the intriguing story of who I am by simply pressing on here
+      </button>
+      <div class="main">
+        <img class="my_pic" src="/Images/About/Me.jpg" alt="Ayeshan" />
+        <div class="about-text">
+          <h1>About Me</h1>
+          <h5>Developer & Designer</h5>
+          <p>
+            Hello world! I'm Ayeshan, a software developer by day, and a
+            code-crunching ninja by night. I speak fluent Java, Python, and
+            sarcasm, and I'm always on the hunt for the next big tech trend.
+            When I'm not coding, you can find me debugging my life and
+            attempting to reboot my social skills. Let's connect and create some
+            digital magic!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Me Section End -->
+
+    <script src="feed_back.js"></script>
+
+    <!-- footer area -->
+    <footer class="footer-distributed">
+      <div class="footer-right">
+        <a href="https://www.facebook.com/no.morphine.5/"
+          ><img
+            class="footer_img"
+            src="/Images/Footer/facebook.png"
+            alt="Facebook"
+        /></a>
+        <a href="https://twitter.com/A_A_Weerasuriya"
+          ><img
+            class="footer_img"
+            src="/Images/Footer/twitter.png"
+            alt="Twitter"
+        /></a>
+        <a href="https://www.linkedin.com/in/ayeshan-weerasuriya/"
+          ><img
+            class="footer_img"
+            src="/Images/Footer/linkedin.png"
+            alt="LinkedIn"
+        /></a>
+        <a href="https://github.com/ayeshanweerasuriya"
+          ><img class="footer_img" src="/Images/Footer/github.png" alt="GitHub"
+        /></a>
+      </div>
+
+      <div class="footer-left">
+        <p class="footer-links">
+          <a class="link-1" href="/Home_Page/Home_Page.html">Home</a>
+
+          <a href="/About/About.html">About</a>
+
+          <a href="/Movies/Movies.html">Movies</a>
+
+          <a href="/Games/Games.html">Games</a>
+
+          <a href="/TV_Series/TV_Series.html">TV Series</a>
+
+          <a href="/feed_back/feed_back.html">FeedBack</a>
+        </p>
+
+        <p>This is not intended to be published &copy; 2023</p>
+      </div>
+    </footer>
+  </body>
+</html>

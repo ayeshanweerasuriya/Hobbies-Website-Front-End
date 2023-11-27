@@ -1,0 +1,649 @@
+/* Whole body */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #24252a;
+}
+
+/* navigation bar */
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(0, 136, 169, 0.8);
+}
+
+/* navigation bar Header */
+
+header {
+  margin-top: 30px;
+  position: relative;
+  padding: 0 2rem;
+}
+
+.navbar {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3rem;
+}
+
+.navbar .logo {
+  cursor: pointer;
+  height: 40px;
+  width: auto;
+  margin-right: auto;
+  margin-left: -10px;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 3rem;
+}
+
+.navbar .toggle_btn {
+  color: #edf0f1;
+  font-size: 16px;
+  cursor: pointer;
+  display: none;
+}
+
+.action_btn {
+  background-color: rgba(0, 136, 169, 1);
+  color: #edf0f1;
+  padding: 9px 25px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.action_btn:hover {
+  scale: 1.05;
+  color: #fff;
+}
+
+.action_btn:active {
+  scale: 0.95;
+}
+
+/* navigation bar Dropdown Menu */
+
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  height: 0;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 9999;
+}
+
+.dropdown_menu.open {
+  height: 240px;
+}
+
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* navigation bar Responsive Design */
+
+@media (max-width: 992px) {
+  .navbar .links,
+  .navbar .action_btn {
+    display: none;
+  }
+
+  .navbar .toggle_btn {
+    display: block;
+  }
+
+  .dropdown_menu {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
+  }
+}
+
+/* contact form */
+
+.contact_form * {
+  margin: 10px 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/*---------------------------------------------*/
+.contact_form a {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666666;
+  margin: 0px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+/*---------------------------------------------*/
+.contact_form h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+.contact_form p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666666;
+  margin: 0px;
+}
+
+.contact_form ul,
+li {
+  margin: 0px;
+  list-style-type: none;
+}
+
+/*---------------------------------------------*/
+.contact_form input {
+  outline: none;
+  border: none;
+}
+
+.contact_form textarea {
+  outline: none;
+  border: none;
+}
+
+.contact_form textarea:focus,
+input:focus {
+  border-color: transparent !important;
+}
+
+/*  */
+
+.contact_form .contact1 {
+  width: 100%;
+  min-height: 100%;
+  padding: 15px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-contact1 {
+  width: 1163px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 90px 130px 88px 148px;
+}
+
+.contact1-pic {
+  width: 296px;
+}
+
+.contact1-pic img {
+  max-width: 100%;
+}
+
+.contact1-form {
+  width: 390px;
+}
+
+.contact1-form-title {
+  display: block;
+  font-size: 24px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 44px;
+}
+
+/* other inputs */
+input.input1 {
+  height: 50px;
+  border-radius: 25px;
+  padding: 0 30px;
+}
+
+/* message box */
+textarea.input1 {
+  min-height: 150px;
+  border-radius: 25px;
+  padding: 12px 30px;
+}
+textarea.input1 + .shadow-input1 {
+  border-radius: 25px;
+}
+
+.wrap-input1 {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+.input1 {
+  display: block;
+  width: 100%;
+  background: #e6e6e6;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #666666;
+
+  resize: none;
+  resize: vertical;
+}
+
+/* contact form button */
+.container-contact1-form-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact1-form-btn {
+  min-width: 193px;
+  height: 50px;
+  border-radius: 25px;
+  background: rgba(0, 136, 169, 1);
+  font-size: 15px;
+  line-height: 1.5;
+  color: #fff;
+  border: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+/* contact form hover status */
+.contact1-form-btn:hover {
+  scale: 1.05;
+  color: #fff;
+}
+
+.contact1-form-btn:active {
+  scale: 0.95;
+}
+
+/* contact form responsive */
+@media (max-width: 1200px) {
+  .contact1-pic {
+    width: 33.5%;
+  }
+
+  .contact1-form {
+    width: 44%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container-contact1 {
+    padding: 90px 80px 88px 90px;
+  }
+
+  .contact1-pic {
+    width: 35%;
+  }
+
+  .contact1-form {
+    width: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-contact1 {
+    padding: 90px 80px 88px 80px;
+  }
+
+  .contact1-pic {
+    display: none;
+  }
+
+  .contact1-form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-contact1 {
+    padding: 90px 15px 88px 15px;
+  }
+}
+
+/* Comments Section */
+
+.box {
+  padding: 10px;
+  max-width: 1185px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.comment-section-wrapper {
+  padding: 50px;
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.comment-section-wrapper h2 {
+  margin-bottom: 30px;
+  display: block;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  padding-bottom: 20px;
+  font-weight: 100;
+}
+
+.comment-section-wrapper input {
+  width: 85%;
+  margin: 0px 0px 30px;
+  height: 50px;
+  border-radius: 25px;
+  padding: 0 30px;
+  background: #e6e6e6;
+  position: relative;
+  font-size: 15px;
+  line-height: 1.5;
+  border: none;
+  outline: none;
+}
+
+.comment-section-wrapper .submit-button {
+  min-width: 193px;
+  height: 50px;
+  border-radius: 25px;
+  background: #0088a9;
+  font-size: 15px;
+  color: #fff;
+  border: none;
+  padding: 0 25px;
+  display: block;
+  margin: 0px auto;
+}
+
+.comment-section-wrapper .submit-button:hover {
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+}
+
+.submit-button:hover {
+  scale: 1.05;
+}
+
+.submit-button:active {
+  scale: 0.95;
+}
+
+/* comments design */
+
+.comment-input {
+  display: flex;
+}
+
+.comment-input input {
+  margin-right: 8px;
+}
+
+li {
+  color: white;
+}
+
+ul {
+  background-color: #24252a;
+  border-radius: 25px;
+  padding: 20px !important;
+}
+
+.comment {
+  border-bottom: 1px solid #0088a9;
+  margin-top: 15px;
+  padding: 15px;
+}
+
+/* About Me Start */
+.about {
+  max-width: 70rem;
+  margin: 60px auto;
+  padding: 0px 20px 20px;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+.about img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.about-text {
+  width: 100%;
+  text-align: center;
+}
+
+.about-text h1 {
+  color: #fff;
+  font-size: 50px;
+  text-transform: capitalize;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.about-text h5 {
+  color: #00d0ff;
+  font-size: 25px;
+  text-transform: capitalize;
+  padding-bottom: 20px;
+}
+
+.about-text p {
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  text-align: justify;
+  color: #edf0f1;
+}
+
+/* About Me collapsible button */
+.collapsible {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #555;
+}
+
+.main {
+  display: none;
+}
+
+/* about me responsive design */
+@media only screen and (min-width: 1000px) {
+  .about .my_pic {
+    width: 50%;
+    /* float: left; */
+  }
+
+  .about-text {
+    padding-top: 50px;
+    width: 40%;
+    float: right;
+  }
+}
+
+/* footer area */
+
+.footer-distributed {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+/* Footer area links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease 0.25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease 0.25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition: all 0.25s;
+}
+
+.footer_img {
+  width: 100%;
+  height: 100%;
+  background-color: #292c2f;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-distributed .footer-right a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.footer-distributed p.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* mkae footer area responsive */
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}

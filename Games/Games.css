@@ -1,0 +1,479 @@
+/* body design */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #24252a;
+}
+
+/* navigation bar design */
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(0, 136, 169, 0.8);
+}
+
+/* Header */
+header {
+  margin-top: 30px;
+  position: relative;
+  padding: 0 2rem;
+}
+
+.navbar {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3rem;
+}
+
+.navbar .logo {
+  cursor: pointer;
+  height: 40px;
+  width: auto;
+  margin-right: auto;
+  margin-left: -10px;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 3rem;
+}
+
+.navbar .toggle_btn {
+  color: #edf0f1;
+  font-size: 16px;
+  cursor: pointer;
+  display: none;
+}
+
+.action_btn {
+  background-color: rgba(0, 136, 169, 1);
+  color: #edf0f1;
+  padding: 9px 25px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.action_btn:hover {
+  scale: 1.05;
+  color: #fff;
+}
+
+.action_btn:active {
+  scale: 0.95;
+}
+
+/* Dropdown Menu */
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  height: 0;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 9999;
+}
+
+.dropdown_menu.open {
+  height: 240px;
+}
+
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .navbar .links,
+  .navbar .action_btn {
+    display: none;
+  }
+
+  .navbar .toggle_btn {
+    display: block;
+  }
+
+  .dropdown_menu {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
+  }
+}
+
+/* Image Slider */
+.container {
+  margin-top: 30px;
+}
+
+.slider-wrapper {
+  position: relative;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  aspect-ratio: 16 / 7;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 0.5rem;
+  overflow-x: hidden;
+}
+
+.slider img {
+  flex: 1 0 100%;
+  object-fit: cover;
+}
+
+/* Post Card */
+.postcard {
+  margin-top: 100px;
+  color: #fff;
+  font-size: 14px;
+}
+.projcard-container {
+  margin: 50px 0;
+}
+
+/* post card inside Code */
+.projcard-container * {
+  box-sizing: border-box;
+}
+.projcard-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
+.projcard {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  background-color: #fff;
+  font-size: 18px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.projcard-img {
+  position: absolute;
+  height: 300px;
+  width: 400px;
+  top: 0;
+  left: 0;
+
+  /* making the transform smooth */
+  transition: transform 0.3s ease-out;
+}
+
+/* align the image to the right side */
+.projcard:nth-child(2n) .projcard-img {
+  left: initial;
+  right: 0;
+}
+
+/* make image rotate */
+.projcard:hover .projcard-img {
+  transform: scale(1.05) rotate(1deg);
+}
+
+/* short color bar width */
+.projcard:hover .projcard-bar {
+  width: 70px;
+}
+
+/* textbox alignment */
+.projcard-textbox {
+  position: absolute;
+  top: 7%;
+  bottom: 7%;
+  left: 430px;
+  width: calc(100% - 470px);
+  font-size: 17px;
+}
+
+/* align the textbox to the left side side */
+.projcard:nth-child(2n) .projcard-textbox {
+  left: initial;
+  right: 430px;
+}
+
+.projcard-textbox::before,
+.projcard-textbox::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: #fff;
+  top: -20%;
+  left: -55px;
+  height: 140%;
+  width: 60px;
+  transform: rotate(8deg);
+}
+
+/* angle the picture corners */
+.projcard-textbox::after {
+  display: none;
+  left: initial;
+  right: -55px;
+}
+
+.projcard:nth-child(2n) .projcard-textbox::after {
+  display: block;
+}
+
+.projcard-textbox * {
+  position: relative;
+}
+.projcard-title {
+  font-family: "Voces", "Open Sans", arial, sans-serif;
+  font-size: 24px;
+  color: #24252a;
+}
+.projcard-subtitle {
+  font-family: "Voces", "Open Sans", arial, sans-serif;
+  color: #888;
+  font-size: 13px;
+  padding-bottom: 5px;
+}
+
+/* color bar */
+.projcard-bar {
+  left: -2px;
+  width: 90px;
+  height: 5px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: width 0.2s ease;
+}
+.projcard-blue .projcard-bar {
+  background-color: #40bd00;
+}
+
+.projcard-red .projcard-bar {
+  background-color: #d62f1f;
+}
+
+.projcard-green .projcard-bar {
+  background-color: #2093ff;
+}
+
+.projcard-orange .projcard-bar {
+  background-color: #ff5722;
+}
+
+.projcard-customcolor .projcard-bar {
+  background-color: #ff5722;
+}
+
+/* projcard description designning */
+.projcard-description {
+  color: #424242;
+  font-size: 15px;
+  height: 125px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  z-index: 10;
+  padding-top: 5px;
+}
+
+/* tagbox */
+.projcard-tagbox {
+  bottom: 3%;
+  cursor: default;
+  font-size: 14px;
+  left: 0;
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* making tagbox body */
+.projcard-tag {
+  background: #0088a9;
+  border-radius: 3px 0 0 3px;
+  color: #edf0f1;
+  cursor: default;
+  display: inline-block;
+  line-height: 26px;
+  margin-right: 20px;
+  padding: 0 10px 0 23px;
+  position: relative;
+  transition: color 0.2s;
+  user-select: none;
+}
+
+/* making tagbox white dot */
+.projcard-tag::before {
+  background: #fff;
+  border-radius: 10px;
+  content: "";
+  height: 6px;
+  left: 10px;
+  position: absolute;
+  top: 10px;
+  width: 6px;
+}
+
+/* making tagbox corners */
+.projcard-tag::after {
+  border-bottom: 13px solid transparent;
+  border-left: 10px solid #0088a9;
+  border-top: 13px solid transparent;
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 0;
+}
+
+/* footer area */
+.footer-distributed {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease 0.25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease 0.25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition: all 0.25s;
+}
+
+.footer_img {
+  width: 100%;
+  height: 100%;
+  background-color: #292c2f;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-distributed .footer-right a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.footer-distributed p.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* footer responsive */
+@media (max-width: 600px) {
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}

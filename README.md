@@ -4,12 +4,6 @@ Welcome to Digital Delights, your go-to source for a curated collection of favor
 
 ## Table of Contents
 
-<<<<<<< HEAD
-
-=======
-
-> > > > > > > ba7021c463cc9cf26b10f8131328a2160590267c
-
 - Home
 - About
 - Movies
@@ -20,8 +14,6 @@ Welcome to Digital Delights, your go-to source for a curated collection of favor
 ## Screenshots
 
 ### Home Page
-
-<<<<<<< HEAD
 
 ![Home Page](Assets/127.0.0.1_5500_Home_Page_Home_Page.html.png)
 

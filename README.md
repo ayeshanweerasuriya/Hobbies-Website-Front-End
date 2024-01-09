@@ -3,10 +3,13 @@
 Welcome to Digital Delights, your go-to source for a curated collection of favorite games, movies, and TV series. This website is a reflection of my passion for entertainment, providing a platform to explore and share the gems that have captivated my interest.
 
 ## Table of Contents
+
 <<<<<<< HEAD
 
 =======
->>>>>>> ba7021c463cc9cf26b10f8131328a2160590267c
+
+> > > > > > > ba7021c463cc9cf26b10f8131328a2160590267c
+
 - Home
 - About
 - Movies
@@ -17,6 +20,7 @@ Welcome to Digital Delights, your go-to source for a curated collection of favor
 ## Screenshots
 
 ### Home Page
+
 <<<<<<< HEAD
 
 ![Home Page](Assets/127.0.0.1_5500_Home_Page_Home_Page.html.png)
@@ -39,25 +43,7 @@ Welcome to Digital Delights, your go-to source for a curated collection of favor
 
 ### Feedback Page
 
-![Feedback Page](Assets/127.0.0.1_5500_feed_back_feed_back.html.png)
-=======
-![Home Page](screenshots/home.png)
-
-### About Page
-![About Page](screenshots/about.png)
-
-### Movies Page
-![Movies Page](screenshots/movies.png)
-
-### Games Page
-![Games Page](screenshots/games.png)
-
-### TV Series Page
-![TV Series Page](screenshots/tv-series.png)
-
-### Feedback Page
-![Feedback Page](screenshots/feedback.png)
->>>>>>> ba7021c463cc9cf26b10f8131328a2160590267c
+# ![Feedback Page](Assets/127.0.0.1_5500_feed_back_feed_back.html.png)
 
 ## Known Problems
 

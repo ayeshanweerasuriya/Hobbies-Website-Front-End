@@ -4,7 +4,9 @@
 
 Welcome to Digital Delights, your go-to source for a curated collection of favorite games, movies, and TV series. This website is a reflection of my passion for entertainment, providing a platform to explore and share the gems that have captivated my interest.
 
-## Table of Contents
+<div style="columns: 2; -webkit-columns: 2; -moz-columns: 2;">
+
+### Table of Contents
 
 - Home
 - About
@@ -12,6 +14,9 @@ Welcome to Digital Delights, your go-to source for a curated collection of favor
 - Games
 - TV Series
 - Feedback
+
+</div>
+
 
 ## Screenshots
 

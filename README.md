@@ -16,15 +16,15 @@ Home | About | Movies | Games | TV Series | Feedback
 
 ### About Page
 
-<img src="Assets/127.0.0.1_5500_About_About.html.png" alt="About Page" style="border-radius: 10px;">
+<img src="Assets/127.0.0.1_5500_About_About.html.png" alt="About Page" style="border-radius: 50px;">
 
 ### Movies Page
 
-<img src="Assets/127.0.0.1_5500_Movies_Movies.html.png" alt="Movies Page" style="border-radius: 10px;">
+<img src="Assets/127.0.0.1_5500_Movies_Movies.html.png" alt="Movies Page" style="border-radius: 50px;">
 
 ### Games Page
 
-<img src="Assets/127.0.0.1_5500_Games_Games.html.png" alt="Games Page" style="border-radius: 10px;">
+<img src="Assets/127.0.0.1_5500_Games_Games.html.png" alt="Games Page" style="border-radius: 50px;">
 
 ### TV Series Page
 

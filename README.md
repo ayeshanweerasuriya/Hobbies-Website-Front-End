@@ -1,4 +1,6 @@
-# Digital Delights
+# <div align="center">Digital Delights</div>
+
+<div align="center">
 
 Welcome to Digital Delights, your go-to source for a curated collection of favorite games, movies, and TV series. This website is a reflection of my passion for entertainment, providing a platform to explore and share the gems that have captivated my interest.
 
@@ -35,7 +37,7 @@ Welcome to Digital Delights, your go-to source for a curated collection of favor
 
 ### Feedback Page
 
-# ![Feedback Page](Assets/127.0.0.1_5500_feed_back_feed_back.html.png)
+![Feedback Page](Assets/127.0.0.1_5500_feed_back_feed_back.html.png)
 
 ## Known Problems
 
@@ -47,3 +49,5 @@ Welcome to Digital Delights, your go-to source for a curated collection of favor
 I've developed this website solely for educational purposes, with no intention of publishing it. The images utilized on this site are sourced from platforms that distribute wallpapers, ensuring their personal use validity. However, any images for which I lack the authority to publish publicly will be promptly removed from this repository. Feel free to replace them with your own images.
 
 Your feedback and contributions are highly appreciated. Enjoy exploring your Digital Delights!
+
+</div>

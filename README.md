@@ -12,27 +12,27 @@ Home | About | Movies | Games | TV Series | Feedback
 
 ### Home Page
 
-![Home Page](Assets/127.0.0.1_5500_Home_Page_Home_Page.html.png)
+<img src="Assets/127.0.0.1_5500_Home_Page_Home_Page.html.png" alt="Home Page" style="border-radius: 10px;">
 
 ### About Page
 
-![About Page](Assets/127.0.0.1_5500_About_About.html.png)
+<img src="Assets/127.0.0.1_5500_About_About.html.png" alt="About Page" style="border-radius: 10px;">
 
 ### Movies Page
 
-![Movies Page](Assets/127.0.0.1_5500_Movies_Movies.html.png)
+<img src="Assets/127.0.0.1_5500_Movies_Movies.html.png" alt="Movies Page" style="border-radius: 10px;">
 
 ### Games Page
 
-![Games Page](Assets/127.0.0.1_5500_Games_Games.html.png)
+<img src="Assets/127.0.0.1_5500_Games_Games.html.png" alt="Games Page" style="border-radius: 10px;">
 
 ### TV Series Page
 
-![TV Series Page](Assets/127.0.0.1_5500_TV_Series_TV_Series.html.png)
+<img src="Assets/127.0.0.1_5500_TV_Series_TV_Series.html.png" alt="TV Series Page" style="border-radius: 10px;">
 
 ### Feedback Page
 
-![Feedback Page](Assets/127.0.0.1_5500_feed_back_feed_back.html.png)
+<img src="Assets/127.0.0.1_5500_feed_back_feed_back.html.png" alt="Feedback Page" style="border-radius: 10px;">
 
 ## Known Problems
 
